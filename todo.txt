@@ -1,0 +1,4 @@
+1. Make Quotation characters available to be inserted into the database
+2. Make scrapy pipeline asyn and build-in syn
+3. Fixed MySQL long-connection bug
+4. ReactJS Chinese Character String Bug

@@ -1,0 +1,15 @@
+Item
+    In the discussion of xpath issue for scrapping items, an item is defined as 
+	the data block scrapped from http response that contains all the necessary item components.
+	
+    Components in one item that need xpath for scrapping:
+		vendor_url
+		source_name
+		price
+		scrapping_time
+		sales_volume
+		comments
+
+
+    The xpath to locate an item should be the shortest xpath possible to identify all the desired items, which displays as a "box" in the browser.
+	The xpath to locate each components in one "item" should be able to identify only one html DOM

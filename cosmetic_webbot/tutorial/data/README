@@ -1,0 +1,3 @@
+Catalog is a folder that contains the job lists that will be loaded by spiders
+
+To make LocalFilePipeline valid: the files inside each of the subdirectories listed here must exactly match the name of the corresponding spider
