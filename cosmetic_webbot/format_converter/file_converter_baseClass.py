@@ -83,4 +83,3 @@ class converter:
        
         elif (self.from_ == converter.TXT) and (self.to_ == converter.EXCEL):
             return self.TABtxt_to_xls_converter()
-        

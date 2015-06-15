@@ -30,7 +30,6 @@ logger.addHandler(handler)
 logger.setLevel(logging.DEBUG)
 
 
-
 class LocalFilePipeline(object):
     B2C_platform = ["JingDong", "TaoBao", "Jumei"]
 
@@ -49,7 +48,6 @@ class LocalFilePipeline(object):
         return item
 
     def spider_closed(self, spider):
-        logger.debug(spider.name+"Closed")     # bug here, only jingdong spider closed signal was triggered
         self.file[spider.name].close()
         # close the file: spider.name
         with open(spider.name, 'r') as f:
@@ -93,7 +91,7 @@ class MySQLdbPipelineSyn(object):
             return item
 
     def spider_closed(self, spider):
-        self.db.close()
+        # self.db.close()
         logger.debug(spider.name+" Spider Closed.")   # logger.debug method never triggered, reason unknown
 
     # Maybe we should add an pipeline closing method here to clean up in addition to the spider_closed method,
